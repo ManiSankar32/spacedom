@@ -1,0 +1,285 @@
+.container21{
+    width:250px;
+    height:150px;
+    border:2px solid #9a32cd; 
+    border-radius:50px;
+    position: absolute; 
+    margin-left: 10px; 
+	text-align:center;	
+}
+.k{
+   margin-left: 270px; 
+}
+.k1{
+   margin-left: 530px; 
+}
+.m{
+   height:33px;
+   margin-left: 790px;
+   font-size:19px;   
+}
+.m1{
+   margin-top:40px;
+}
+.m2{
+	margin-top:80px;
+}
+
+.m3{
+	margin-top:120px;
+}
+.m4{
+	width:1040px;
+    height:300px;
+	text-align:left;
+	margin-top:200px;
+}
+.m14{
+	width:1040px;
+	
+    height:25px;
+	text-align:left;
+	margin-top:170px;
+	border:none;
+	
+}
+.m5{
+	width:1000px;
+    height:250px;
+	margin-left:15px;
+	margin-top:7px;
+	overflow-y:auto;
+	border:none;
+	padding:none;
+	padding:none;
+}
+.m10{
+   height:33px;
+   margin-left: 750px;
+   font-size:20px; 
+   margin-top:-20px;   
+   text-align:none;	
+   color:#9a32cd;
+   border:none;   
+}
+.cancle{
+	margin-top:540px;
+	margin-left:180px;
+}
+#button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+	font-size:160%;
+	font-family: "Times New Roman", Times, serif;
+}
+.button1 {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+	font-size:140%;
+	margin-top:515px;
+	margin-left:180px;
+	color:#9a32cd;
+    font-family: "Times New Roman", Times, serif;
+}
+.s{
+  	margin-left:510px;
+}
+.button1:hover{
+    color:black; 
+}
+ul{
+    display:block;
+    text-decoration: none;
+    list-style-type:none;
+}
+li{
+    margin-left:30;
+	font-size: 110%;
+	text-decoration: none;
+}
+#button:hover{
+      color:#9a32cd; 
+}
+.flex-container {
+  display: flex;
+}
+.flex-container > div {
+  margin: 10px 80px;
+}
+
+
+
+table {
+  overflow-y: scroll;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: auto;
+  width: 950px;
+  color:#9a32cd;
+  white-space: nowrap;
+   font-size:130%;
+  font-family: "Times New Roman", Times, serif;
+   margin-left:15px;
+   margin-top:3px;
+   
+}
+table tr{
+counter-increment:serial-number;
+
+}
+
+th, td {
+  text-align: center;
+  padding: 6px;
+  
+}
+tr{
+height:40px;
+}
+
+tr:nth-child(even){background-color: #D7BDE2 }
+.sno{
+ width: 50px;
+}
+.row-sno {
+   width: 50px;
+}
+.row-itemid {
+  width: 110px;
+}
+.row-disc {
+   width: 195px;
+}
+.row-price {
+  width: 90px;
+}
+.row-qty {
+    width:80px;
+}
+.row-hsn {
+   width:80px;
+}
+.row-gst {
+ width:95px;
+}
+.row-total {
+ width:100px;
+}
+.row-delete{
+  width: 5%;
+}
+.auto-index{
+counter-reset:serial-number;
+}
+.auto-index td:first-child:before
+{
+  counter-increment: Serial-number;      
+  content: " " counter(Serial-number);
+}
+
+.b{
+	margin-top:260px;
+	margin-left:50px;
+	background-color: Transparent;
+	background-repeat:no-repeat;
+	border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+	font-size:120%;
+	color:black;
+    font-family: "Times New Roman", Times, serif;
+}
+.b1{
+	  margin-left:55px;
+}
+.b:hover{
+    color:#9a32cd; 
+}
+.b1:hover{
+    color:#9a32cd; 
+}
+.t{
+        border:none;
+		outline:none;
+		font-size:15px;
+		font-family: "Times New Roman", Times, serif;
+    }
+.t12{
+	border:none;
+		outline:none;
+}
+.t1{
+	 size:2;
+	 border:none;
+	outline:none;
+	font-size:20px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+
+
+
+.hed{
+	
+  font-family: 'Allerta Stencil';
+  position: relative;
+  
+  text-transform: uppercase;
+ 
+  color:#9a32cd;
+  overflow: hidden;
+  background: linear-gradient(90deg,#9a32cd, #fff,#9a32cd);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+
+table {
+    
+	counter-reset: serial-number;
+}
+
+table tr {
+    counter-increment: rowNumber;
+	
+}
+
+table tr td:first-child::before {
+    content: counter(rowNumber);
+    min-width: 1em;
+    margin-right: 0.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
