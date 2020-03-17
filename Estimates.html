@@ -1,0 +1,109 @@
+<html>
+    <head>
+            <link rel="stylesheet" type="text/css" href="css/Estimate.css">
+			<link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<script src="js/Invoice.js"></script>
+    </head>
+    <body>
+            <div class="container2">
+                <div class="container21">
+				    <p style="font-size:19px; margin-top:0px;">Address:</p>
+					Name:<input type="text" class="t" size="10"><br>
+					Address:<input type="text"class="t" size="10" ><br>
+					Door No:<input type="text" class="t" size="10"><br>
+					Mail Id:<input type="text" class="t" size="10"><br>
+					Phone NO:<input type="text" class="t" size="10" >
+				</div>
+				<div class="container21 k">
+				    <p style="font-size:19px; margin-top:0px;">Bill To:</p>
+					Name:<input type="text" class="t" size="10"><br>
+					Address:<input type="text"class="t" size="10" ><br>
+					Door No:<input type="text" class="t" size="10"><br>
+					Mail Id:<input type="text" class="t" size="10"><br>
+					Phone NO:<input type="text" class="t" size="10" >
+				</div>
+				<div class="container21 k1">
+				    <p style="font-size:19px; margin-top:0px;">Ship To:</p>
+					Name:<input type="text" class="t" size="10"><br>
+					Address:<input type="text"class="t" size="10" ><br>
+					Door No:<input type="text" class="t" size="10"><br>
+					Mail Id:<input type="text" class="t" size="10"><br>
+					Phone NO:<input type="text" class="t" size="10" >
+				</div>
+				<div class="container21 m">
+				    <p style="margin-top:5px;">
+				        Est No :<input type="text" class="t"></p>
+				</div>
+				<div class="container21 m m1">
+				    <label for="start"></label>
+					 <p style="margin-top:5px;">
+                     Est Date:    <input type="date" class="t" name="trip-start"></p>
+				</div>
+				<div class="container21 m m2">
+				    <p style="margin-top:5px;">
+                    Expiry Dt:   <input type="date" class="t" name="trip-start"></p>
+				</div>
+				<div class="container21 m m3">
+				    <p style="margin-top:5px;">
+				        PO No :<input type="text" class="t"></p>
+				</div>
+			    <div class="container21 m14">
+				<p style="color:#9a32cd; font-size: 130%; margin-top:-1px; margin-left:30px;">
+				SUBJECT:<input type="text" size="80" class="t1">
+				</p>
+				</div>
+				<div class="container21 m4">
+				    <div class="container21 m5">
+				        <table id="dataTable">
+						<thead>
+                            <tr>
+							    <th class="row1 row-sno"  ><p  >Sno</p></th>
+                                <th class="row2 row-itemid"><p>ItemID</p></th>
+                                <th class="row3 row-disc"  ><p>Discription</p></th>
+                                <th class="row4 row-price"><p>Price</p></th>
+                                <th class="row5 row-qty"><p>Qty</p></th>
+                                <th class="row6 row-hsn"><p>Hsn</p></th>
+                                <th class="row7 row-gst"><p>GST</p></th>
+                                <th class="row8 row-total"><p>Total</p></th>
+				
+	                        </tr>
+							</thead>
+							 
+			               <tr>
+                           <td>&nbsp;</td>
+							<td style="left:3px;">
+							<input type="text" size="12"  name="product" list="productName"/>
+							<datalist   id="productName" value ="browser" >
+                                <OPTION >India</OPTION>
+                                <OPTION >Germany</OPTION>
+                                <OPTION >France</OPTION>
+                                <OPTION >United States</OPTION>
+                                <OPTION >Europe</OPTION>
+                            </datalist></td>
+							<td><input type="text"  size="24" /></td>
+							<td><input type="text"  size="8" /></td>
+							<td><input type="text"  size="8" /></td>
+							<td><input type="text"  size="8" /></td>
+							<td><input type="text"  size="8" /></td>
+							<td><input type="text"  size="14" class='txtCal'/></td>
+							<TD><i class="fa fa-trash"  onclick="deleteRow('dataTable')"></i></TD>
+							
+							</tr>
+					    </table>
+					</div>
+					<button type="button" class="b" onclick="addRow('dataTable')">ADD</button>
+					
+					<div class="container21 m10">
+				    <p style="margin-top:0px;">
+				        Grand Total:<b><span id="total_sum_value"></span></b>
+				</div>
+				</div> 
+	            <input type="button" class="button1" value="CANCEL" >
+				<input type="button" class="button1 s" value="SAVE" >
+			</div>
+        </div>
+    </body>
+</html> 
