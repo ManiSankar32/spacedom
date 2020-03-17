@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Spacedom</title>
+	<link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <style>
+        .dropbtn li.activado i.fa-caret-down{
+      transform: rotate(180deg);
+      transition: 0.5s ease;
+    }
+  
+      </style>
+</head>
+<body>
+    <div class="WebContainer">
+    <div class="top-navbar">
+        <div class="navigation-bar">
+        
+              <img src="images/Picture1.png">
+        
+              <ul>
+                <li><a href="#">Logout</a></li>
+                <li><a href="#">User</a></li>
+                <li><a href="#">Date</a></li>
+                <li><a href="#">Time</a></li>
+              </ul>
+              <h1>Invoice Billing</h1>
+            </div>
+    </div>
+<div class="wrapper">
+          <ul  class="sidebar-menu">
+            <li class="subhead"><a href="#dynamic"><i class="fas fa-home"></i>HOME</li></a>
+            <li class="subhead"><a><i class="fas fa-user"></i><span>SALES</span><i class="fa fa-chevron-down" id="move"></i></a>
+                <ul class="sidebar-submenu" style="display: none;">
+                    <li><a href="Estimate.html">Estimates</a></li>
+                    <li><a href="Invoice.html">Invoice</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="">Services</a></li>
+                </ul> 
+            </li>
+            <li class="subhead"><a><i class="fas fa-address-card"></i><span>PURCHASES</span><i class="fa fa-chevron-down"></i></a>
+                <ul class="sidebar-submenu" style="display: none;">
+                    <li><a href="Bills.html">bills</a></li>
+                    <li><a href="Vendors.html">Vendors</a></li>
+                    <li><a href="Expenses.html">Expenses</a></li>
+                </ul>
+            </li>
+            <li class="subhead"><a><i class="fas fa-project-diagram"></i><span>CUSTOMERS</span><i class="fa fa-chevron-down"></i></a>
+                <ul class="sidebar-submenu" style="display: none;">
+                    <li><a href="AddressBook.html">Address Book</a></li>
+                    <li><a href="Customerstatement.html">Customer Statment</a></li>
+                </ul>
+            </li>
+            <li class="subhead"><a><i class="fas fa-blog"></i><span>SETTINGS</span><i class="fa fa-chevron-down"></i></a>
+                <ul class="sidebar-submenu" style="display: none;">
+                    <li><a href="#">GST Settings</a></li>
+                    <li><a href="#">User Management</a></li>
+                    <li><a href="#">Business Management</a></li>
+                </ul>
+            </li>
+          </ul>
+    </div>
+    <div class="main_content" id="dynamic">
+       <div class="Checkinfo">
+           <p>Bank Balance</p>
+           <input type="text"id="Bankbalance" class="Bankbalance" readonly>
+           <p style="margin-left: 20px;">Stock Value</p>
+           <input type="text" id="Bankbalance" class="Bankbalance" readonly>
+           <div class="dropdown" >
+              <ul class="dropbtn">
+                <li><div class=""></i>Create New<i class="fa fa-caret-down"></i></div>
+                   <ul class="dropdown-content" style="display: none;">
+                     <li><a href="Estimate.html">Estimate<i class="fa fa-caret-left"></i></a></li>
+                     <li><a href="Invoice.html">Invoice<i class="fa fa-caret-left"></i></a></li>
+                     <li><a href="Products.html">Products<i class="fa fa-caret-left"></i></a></li>
+                     <li><a href="Vendors.html">Vendors<i class="fa fa-caret-left"></i></a></li>
+                   </ul>
+                </li>
+              </ul>
+           </div>        
+       </div>
+    </div>
+    </div>
+    <script>
+        $.sidebarMenu($('.sidebar-menu'))
+      </script> 
+      <script>
+        $(document).ready(function(){
+		$('li a').click(function(e){
+			e.preventDefault();
+			$("#dynamic").load($(this).attr('href'));
+			jQuery(".dynamic").fadeIn("slow");
+		});
+        $('.dropbtn li:has(ul)').click(function() {
+
+            if($(this).hasClass('activado')) {
+            $(this).removeClass('activado');
+            $(this).children('ul').slideUp();
+
+                } else {
+                    $(this).addClass('activado');
+                    $(this).children('ul').slideDown();
+                    }
+            })
+	    });
+        </script>
+</body>
+</html>
